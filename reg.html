@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <tittle></tittle>
+    </head>
+    <body>
+        <form >
+        <div>
+       <label>First Name</label>
+       <input type="text" name="fname" placeholder="Enter First Name" required> 
+    </div>
+    <div>
+       <label>Last Name</label>
+       <input type="text" name="lname" placeholder="Enter Last Name" required> 
+    </div>
+    <div>
+       <label>Email</label>
+       <input type="email" name="email" placeholder="Enter Email" required> 
+    </div>
+    <div>
+       <label>Message</label>
+       <textarea name="message"></textarea>
+    </div>
+    <div>
+        <label>Gender</label>
+        <select name="gender">
+            <option value="Male">Male</option>
+         <option value="Female">Female</option>
+          <option value="Other">Other</option>
+        </select>
+ </div>
+ <div>
+    <label>Age</label>
+    <input type="number" name="age" value="34">
+ </div>
+ <div>
+    <label>Birthday:</label>
+    <input type="date" name="birthday" value="dd/mm/yyy" >
+ </div>
+ <div>
+    <input type="submit" name="submit" value="submit">
+ </div>
+ <p id="demo"></p>
+
+ <script>
+   document.getElementById("demo").innerHTML="Hello!!";
+ </script>
+    </form>
+    </body>
+</html>
