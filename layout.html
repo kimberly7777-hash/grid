@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>layout</title>
+        <style>
+            body{
+                box-sizing:border-box;
+                width:100%;
+                height:auto;
+            }
+            header{
+                background-color:blanchedalmond;
+                text-align:center;
+                padding:20px;
+                
+            }
+            footer{
+                background-color:blanchedalmond;
+                text-align:center;
+                padding:20px;
+                font-weight:bold;
+                
+            }
+            section{
+                display:flex;
+                
+                
+            }
+            nav{
+                background-color:rgb(167, 233, 127);
+                
+            }
+            article{
+                background-color:rgb(208, 238, 208);
+                padding:20px;
+            }
+            nav ul{
+            list-style:none;
+            padding:20px;
+            flex-direction:row;
+            justify-content:space-round;
+            }
+            ul li a{
+                text-decoration:none;
+                font-weight:bold;
+                font-size:15px;
+            }
+            
+            @media (max-width: 600px) {
+  section {
+    flex-direction: column;
+  }
+}
+            nav ul li{
+                display:inline-block;
+            }
+            .left{
+                background-color:blue;
+                padding:20px;
+                display:flex;
+            }
+            .main{
+                background-color:hotpink;
+                padding:20px;
+            }
+            .right{
+                background-color:indianred;
+                padding:20px;
+            }
+            @media(max-width:600px){
+                .left, .main, .right{
+                    width:100%;
+                    display:block;
+                }
+            }
+            
+            
+        </style>
+    </head>
+    <body>
+        <header>
+            <h1>Cities</h1>
+        </header>
+        <section>
+            <nav>
+                <ul>
+                    <li><a href="#">London</a></li>
+                    <li><a href="#">Paris</a></li>
+                    <li><a href="#">Tokyo</a></li>
+                </ul>
+            </nav>
+            <article>
+              <h2>London</h2> 
+              <p>London is the capital city of England. It is the most populous city of the United Kingdom,with a metropolitan area of over 13 million inhabitants</p>
+            </article>
+        </section>
+        <footer>
+            <p>Footer</p>
+        </footer>
+
+        <div class="left">
+            <p>Left Menu</p>
+        </div>
+        <div class="main">
+            <p>Main Content</p>
+        </div>
+        <div class="right">
+            <p>Right Content</p>
+        </div>
+
+    </body>
+</html>
