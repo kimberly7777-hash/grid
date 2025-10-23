@@ -14,9 +14,9 @@
                 padding:15px;
             }
             nav{
-                
+                flex:0 0 20%;
                 text-align:center;
-                display:block;
+                
                 background-color: lightpink;
                 padding: 10px;
                 box-sizing: border-box;
@@ -35,7 +35,7 @@
                 padding:10px;
                 box-sizing:border-box;
                 overflow-wrap:break-word;
-                
+                flex:0 0 45%;
             }
             div{
                 
@@ -46,6 +46,7 @@
                 box-sizing:border-box;
                 width:30%;
                 height:30%;
+                flex:0 0 30%;
             }
             footer{
                 background-color:lightcoral;
@@ -65,7 +66,7 @@
                 background-color:lightpink;
                 margin-top:7px;
                 text-decoration:none;
-                display:block;
+                
                 margin:5px;
                 width:80px;
                 text-align:center;
@@ -83,7 +84,15 @@
 }
             nav ul li{
                 margin-bottom:10px;
-            }          
+            }  
+            @media  (max-width:600px)  {
+                section{
+                    flex-direction:column;
+                }
+                nav, article, div{
+                    width:100px;
+                }
+            }       
 
 
         </style>
