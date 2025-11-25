@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>form2</title>
+        <style>
+            *{
+                box-sizing:border-box;
+            }
+            input[type=text] ,select{
+                width:100%;
+                padding:13px 13px ;
+                margin:7px;
+                border:1px solid #ccc;
+                border-radius:4px;
+                
+            }
+            input[type=text]:focus{
+                background-color:blanchedalmond;
+            }
+            label[for=fname],label[for=lname],label[for=Country]{
+                margin-left:9px;
+            }
+            #submit{
+                background-color:rgb(69, 194, 69);
+                width:100%;
+                padding:13px 13px;
+                margin:7px;
+                border:1px solid #ccc;
+                border-radius:5px;
+                color:aliceblue;
+            }
+            div{
+                background-color:#f2f2f2;
+                padding:20px;
+            }
+            input[name=search]{
+                background-image:url('searchicon.png.svg');
+                background-position:9px;
+                padding-left:45px;
+                background-repeat:no-repeat;
+                background-color:white;
+                background-size:25px;
+                font-size:16px;
+            }
+        </style>
+    </head>
+    <body >
+        <div>
+            <label for="fname">First Name:</label><br>
+            <input type="text"id="fname" name="firstname" placeholder="Your First Name.."required><br>
+            <label for ="lname">Last Name:</label><br>
+            <input type="text" id="lname" name="lastname" placeholder="Your Last Name.."required><br>
+            <label for="Country">Country:</label> <br>
+            <select id="country" name="country">
+                <option value="Indonesia">Indonesia</option>
+                <option value="Tanzania">Tanzania</option>
+                <option value="China">China</option>
+            </select> <br>
+            <button id="submit">Submit</button>
+            
+            <input type="text" id="search" name="search" placeholder="Search">
+        </div>
+    </body>
+</html>

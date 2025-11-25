@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>from3</title>
+        <style>
+            *{
+                box-sizing:border-box;
+            }
+            input[id=fname], input[id=lname], select{
+                width:80%;
+                padding:10px 10px;
+                border-radius:5px;
+                border:1px solid #ccc;
+                margin:5px;
+            }
+            input[id=subject]{
+                width:80%;
+                height:200px;
+                border-radius:5px;
+                border:1px solid #ccc;
+                margin:5px;
+
+            }
+            #submit{
+                float:right;
+                margin:5px;
+                color:white;
+                background-color:rgb(59, 179, 59);
+                border:1px solid #ccc;
+                padding:12px 21px;
+                border-radius:5px;
+            }
+            div{
+                background-color:#f3f3f3;
+                padding:60px;
+                align-items:center;
+                margin-bottom:15px;
+                
+            }
+
+        </style>
+    </head>
+    <body>
+        <div>
+            <label for="fname">First Name:</label>
+            <input type="text"id="fname" name="firstname" placeholder="Your First Name.."required><br>
+            <label for ="lname">Last Name:</label>
+            <input type="text" id="lname" name="lastname" placeholder="Your Last Name.."required><br>
+            <label for="Subject">Subject</label>
+            <input type="text" id="subject" name="subject" placeholder="Write Something here.."><br>
+            <label for="Country">Country:</label> 
+            <select id="country" name="country">
+                <option value="Indonesia">Indonesia</option>
+                <option value="Tanzania">Tanzania</option>
+                <option value="China">China</option>
+            </select> <br>
+            <button id="submit">Submit</button>
+        </div>
+    </body>
+</html>

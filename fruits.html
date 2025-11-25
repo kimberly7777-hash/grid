@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>fruits</title>
+        </head>
+        <style>
+            .box{
+                float:left;
+                width:30%;
+                padding:5px;
+            }
+            .clearfix::after{
+                content:"";
+                clear:both;
+                display:table;
+            }
+            li{
+                list-style-type:none;
+                float:left;
+            }
+            li a{
+                display:inline-block;
+                background-color:rgb(31, 138, 220);
+                color:white;
+                text-decoration:none;
+                padding:14px 22px;
+
+            }
+            .home{
+                background-color:rgb(142, 31, 31);
+            }
+            li a:hover{
+                background-color:rgb(36, 118, 138);
+            }
+            img{
+                opacity:0.5;
+            }
+            img:hover{
+                opacity:1.0;
+            }
+            .background{
+                background:url(klematis.jpg) repeat;
+                padding:30px 40px;
+                border:2px solid black;
+                
+            }
+            .flower{
+                background-color:#ffffff;
+                padding:8px;
+                opacity:0.6;
+                border: 1px solid black;
+            }
+            p{
+                font-weight:bold;
+            }
+           h7{
+              background-color:yellow;
+              padding:20px;
+              display:none;
+           }
+            section:hover h7{
+                display:block;
+            }
+            li.new{
+                display:inline-block;
+                position:relative;
+            }
+            .newspaper{
+                display:none;
+                position:absolute;
+                top:100%;
+                left:0;
+                background-color:#f9f9f9;
+                min-width:160px;
+                z-index:1;
+                
+            }  
+            .newspaper a{
+                display:block;
+                padding:12px 16px;
+                color:black;
+                text-decoration:none;
+
+            }
+            li.new :hover div.newspaper{
+                display:block;
+            }
+            
+
+
+        </style>
+        <div class="clearfix">
+            <div class="box">
+                <img src="apple.jpg" alt="apple" style="width:100%;">
+            </div>
+            <div class="box">
+                <img src="watermelon.jpg" alt="watermelon" style="width:100%;">
+            </div>
+            <div class="box">
+                <img src="grapes.jpg" alt="grapes" style="width:100%;">
+            </div>
+            </div>
+        
+      <div class="clearfix">
+        <ul>
+            <li><a href="#home" class="home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li class="new">
+                <a class="newss">News</a>
+            <div class="newspaper">
+                <a href="#">Link 1</a>
+                <a href="#">Link 1</a>
+                <a href="#">Link 1</a>
+            </div>
+            
+            </li>
+        </ul>
+        </div>
+        
+        <br>
+        <img src="forest.jpg" alt="mountain" style="width:170px; height:170px;">
+                <img src="mountain.jpg" alt="mountain" style="width:170px; height:170px;">
+                        <img src="5.terre.jpg" alt="mountain" style="width:170px; height:170px;">
+                  
+                        <br>
+                        <br>
+                 <div class="background">
+                    <div class="flower">
+                        <p>Nature to visit, all the time i said i can see it all, save my heart land ,the sea,about you have been dreaming of</p>
+                    </div>
+                 </div>
+
+                 <section>Click me
+                    <h7>Here i am</h7>
+                 </section>
+
+</html>
